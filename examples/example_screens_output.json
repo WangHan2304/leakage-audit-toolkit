@@ -1,0 +1,18 @@
+{
+  "toolkit_version": "0.1.0",
+  "generated_utc": "2026-09-29T06:38:12+00:00",
+  "csv": "examples/example_corpus.csv",
+  "csv_sha256": "1e1100f789db05bccc3c038bae238873c5a3911ad3fe0dcc0afc23ad9daec5fe",
+  "command": "screens",
+  "screens": {
+    "target_col": "ultimate_tensile_strength_MPa",
+    "between_source_SS_fraction": 0.902,
+    "duplicate_vector_census": {
+      "rows_in_duplicate_groups": 10,
+      "n_duplicate_groups": 5,
+      "duplicate_row_fraction": 0.8333,
+      "n_rows": 12
+    },
+    "corr_target_vs_feature": 0.7698
+  }
+}

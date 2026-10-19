@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this leakage-audit toolkit, please cite the associated paper."
+title: "Leakage-Audit Toolkit for small-sample materials-ML regression corpora"
+type: software
+authors:
+  - name: "Ti6Al4V LPBF Project authors"
+repository-code: "https://github.com/WangHan2304/leakage-audit-toolkit"
+abstract: >-
+  Material-agnostic data-integrity checks (A1--A5 leakage audits and three
+  cheap pre-modeling screens) for small-sample materials-ML regression corpora,
+  validated on three laser powder-bed fusion alloys (Ti-6Al-4V, 316L,
+  Inconel 718).
+keywords:
+  - leakage audit
+  - cross-validation
+  - materials informatics
+  - laser powder bed fusion
+  - data provenance
+license: MIT
+version: 0.1.0
+# date-released and the repository-code owner segment are assigned at release;
+# see RELEASE_CHECKLIST.md (git subtree split -> GitHub release -> Zenodo DOI).
+date-released: "2026-10-19"
+identifiers:
+  - description: "Zenodo archived DOI (assigned at release)"
+    type: doi
+    value: "REPLACE_AT_RELEASE-ZENODO-DOI"

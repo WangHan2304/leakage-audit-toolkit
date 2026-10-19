@@ -1,0 +1,13 @@
+laser_power_W,scan_speed_mm_s,layer_thickness_um,hatch_spacing_um,ultimate_tensile_strength_MPa,yield_strength_MPa,elongation_percent,doi,provenance_type,publisher
+180.0,800.0,30.0,90.0,612.5,498.0,55.1,10.0000/ex.demo.a,primary_paper,DemoPublisherA
+180.0,800.0,30.0,90.0,605.0,501.0,58.0,10.0000/ex.demo.a,primary_paper,DemoPublisherA
+180.0,805.0,30.0,90.0,598.3,490.2,61.4,10.0000/ex.demo.a,primary_paper,DemoPublisherA
+200.0,600.0,40.0,100.0,655.0,540.1,47.2,10.0000/ex.demo.b,primary_paper,DemoPublisherB
+200.0,600.0,40.0,100.0,660.2,545.0,44.8,10.0000/ex.demo.b,primary_paper,DemoPublisherB
+150.0,1000.0,25.0,80.0,580.9,470.5,63.0,10.0000/ex.demo.c,primary_paper,DemoPublisherC
+150.0,1000.0,25.0,80.0,575.1,468.0,66.2,10.0000/ex.demo.c,primary_paper,DemoPublisherC
+220.0,700.0,35.0,95.0,671.53281907461,552.9183699473,41.22001239871,10.0000/ex.demo.d,literature_compilation,DemoPublisherD
+220.0,700.0,35.0,95.0,668.41209384751,549.1120948871,42.91827364921,10.0000/ex.demo.d,literature_compilation,DemoPublisherD
+190.0,900.0,30.0,85.0,625.7,510.3,52.4,10.0000/ex.demo.a,literature_compilation,DemoPublisherD
+190.0,900.0,30.0,85.0,631.2,515.8,50.1,10.0000/ex.demo.e,primary_paper,DemoPublisherE
+170.0,1100.0,28.0,88.0,590.4,480.2,59.9,10.0000/ex.demo.e,primary_paper,DemoPublisherE

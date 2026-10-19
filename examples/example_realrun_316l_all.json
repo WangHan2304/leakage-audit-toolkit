@@ -1,0 +1,98 @@
+{
+  "toolkit_version": "0.1.0",
+  "generated_utc": "2026-09-29T06:36:27+00:00",
+  "csv": "..\\data\\collected\\lpbf_316l_benchmark.csv",
+  "csv_sha256": "9e32c1c46759f5243d2dedacc098582e43b7c927df237e8a2bde6ffdd86e822d",
+  "command": "all",
+  "audits": {
+    "a1": {
+      "n_rows": 210,
+      "n_sources": 16,
+      "n_splits_used": 5,
+      "all_folds_source_disjoint": true,
+      "example_violations": [],
+      "verdict": "PASS"
+    },
+    "a2": {
+      "per_target": {
+        "ultimate_tensile_strength_MPa": {
+          "n_labels": 191,
+          "decimal_profile": {
+            "1": 87,
+            "2": 23,
+            "4": 1,
+            "5": 7,
+            "6": 73
+          },
+          "n_ge_threshold": 73,
+          "threshold": 6
+        },
+        "yield_strength_MPa": {
+          "n_labels": 71,
+          "decimal_profile": {
+            "1": 60,
+            "2": 11
+          },
+          "n_ge_threshold": 0,
+          "threshold": 6
+        },
+        "elongation_percent": {
+          "n_labels": 143,
+          "decimal_profile": {
+            "1": 49,
+            "2": 15,
+            "4": 1,
+            "5": 8,
+            "6": 70
+          },
+          "n_ge_threshold": 70,
+          "threshold": 6
+        }
+      },
+      "flagged_targets": [
+        "ultimate_tensile_strength_MPa",
+        "elongation_percent"
+      ],
+      "verdict": "REVIEW"
+    },
+    "a3": {
+      "gt_tier": "primary_paper",
+      "n_gt_dois": 15,
+      "tiers": {
+        "literature_compilation": {
+          "n_dois": 1,
+          "overlap_with_gt": []
+        },
+        "primary_paper": {
+          "n_dois": 15,
+          "overlap_with_gt": []
+        }
+      },
+      "tiers_with_gt_overlap": [],
+      "verdict": "PASS"
+    },
+    "a4": {
+      "n_rows": 210,
+      "tolerance": 0.05,
+      "proc_cols": [
+        "laser_power_W",
+        "scan_speed_mm_s",
+        "layer_thickness_um",
+        "hatch_spacing_um"
+      ],
+      "n_rows_with_a_near_duplicate": 147,
+      "duplicate_row_fraction": 0.7,
+      "verdict": "PASS"
+    },
+    "a5": {
+      "n_rows": 210,
+      "n_sources": 16,
+      "largest_source_doi": "10.7910/DVN/HBF3XF",
+      "largest_source_share": 0.4238,
+      "n_publishers": 8,
+      "largest_publisher": "Harvard Dataverse",
+      "largest_publisher_share": 0.4238,
+      "verdict": "PASS"
+    }
+  }
+}

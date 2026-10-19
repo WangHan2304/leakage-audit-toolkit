@@ -1,0 +1,38 @@
+name: ci
+
+# Runs the audit_toolkit test suite on every push / pull request.
+# After `git subtree split -P toolkit_release` this becomes the standalone
+# repo's root `.github/workflows/ci.yml` unchanged.
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install package + test extras (editable)
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e '.[test]'
+
+      - name: Run pytest
+        run: pytest -q
+
+      - name: Smoke-test the CLI end to end
+        run: |
+          audit-toolkit all --csv examples/example_corpus.csv --out /tmp/audit.json
+          python -c "import json;d=json.load(open('/tmp/audit.json'));assert set(d['audits'])=={'a1','a2','a3','a4','a5'};print('cli smoke OK')"

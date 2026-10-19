@@ -1,0 +1,6 @@
+# Leakage-audit toolkit runtime requirements.
+# Pinned to the versions the checks were validated against; any recent
+# release of these three packages works (the API surface used is stable).
+numpy>=1.24
+pandas>=2.0
+scikit-learn>=1.3
