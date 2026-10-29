@@ -32,4 +32,4 @@ date-released: "2026-10-19"
 identifiers:
   - description: "Zenodo archived DOI (assigned at release)"
     type: doi
-    value: "REPLACE_AT_RELEASE-ZENODO-DOI"
+    value: "10.5281/zenodo.23751783"
