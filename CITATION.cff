@@ -3,7 +3,15 @@ message: "If you use this leakage-audit toolkit, please cite the associated pape
 title: "Leakage-Audit Toolkit for small-sample materials-ML regression corpora"
 type: software
 authors:
-  - name: "Ti6Al4V LPBF Project authors"
+  - family-names: "Wang"
+    given-names: "Han"
+    affiliation: "Zhejiang Lab, 2880 Wenyi West Road, Hangzhou 311121, China"
+  - family-names: "Ma"
+    given-names: "Siming"
+    affiliation: "School of Mechanical Engineering, Suzhou University of Science and Technology, Suzhou 215009, China; School of Mechanical Engineering, Shanghai Jiao Tong University, Shanghai 200240, China"
+  - family-names: "Zhan"
+    given-names: "Kai"
+    affiliation: "Zhejiang Lab, 2880 Wenyi West Road, Hangzhou 311121, China"
 repository-code: "https://github.com/WangHan2304/leakage-audit-toolkit"
 abstract: >-
   Material-agnostic data-integrity checks (A1--A5 leakage audits and three
